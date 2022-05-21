@@ -1,26 +1,44 @@
 var startEl = document.getElementById("startBtn");
 var timerEl = document.getElementById("timer");
+var mainEl = document.getElementById("main");
 var timeLeft = 75;
+var timeMessage = "You've run out of time. Try again!"
+var introText = document.getElementById("intro-text");
 
-// Click the start button. Timer starts. First question appears. (Event Listeners)
+
+// Click the start button. Timer starts. 
 function timer() {
-    timerEl.textContent=timeLeft;
+    timerEl.textContent="Time: " + timeLeft;
+    setInterval(countdown, 1000);
+}
+
+function countdown() {
+    timerEl.textContent="Time: " + timeLeft;
+    if (timeLeft > 0) {
+        timeLeft--
+    } else {
+        timerEl.textContent = timeMessage;
+    }
 }
 
 startEl.addEventListener("click", timer);
-// function timer() {
 
+// First question appears. (Event Listeners)
 
-//     var timeInterval = setInterval(function () {
-//         timerEl.textContent = "Time: " + timeLeft
-//     }, 1000);
-// }
-
-// startEl.addEventListener("click", function() {
-
-// });
-
-
+var quizQuestions = [
+    {
+        id: 1,
+        question: "Question 1",
+        options: ["1", "2", "3"],
+        answer: 1
+    },
+    {
+        id: 1,
+        question: "Question 2",
+        options: ["1", "2", "3"],
+        answer: 2
+    }
+];
 
 // Click one of the answer options. Another question appears. (Event Listeners)
 
