@@ -1,14 +1,43 @@
 * {
     margin: 0;
     padding: 0;
+}
+
+body {
     font-family: Arial, Helvetica, sans-serif;
     background-color: #fff;
     color: #000;
 }
 
-body {
-    padding: 50px;
+header {
+    padding: 20px;
     text-align: center;
+}
+
+header nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    list-style: none;
+}
+
+main {
+    padding: 10px;
+    text-align: center;
+}
+
+a {
+    color: #325ea8;
+}
+
+.btn a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.btn a:visited {
+    color: #fff;
 }
 
 .btn {

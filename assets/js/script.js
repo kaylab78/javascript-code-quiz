@@ -8,12 +8,12 @@ var introText = document.getElementById("intro-text");
 
 // Click the start button. Timer starts. 
 function timer() {
-    timerEl.textContent="Time: " + timeLeft;
+    timerEl.textContent=timeLeft + " Seconds Remaining";
     setInterval(countdown, 1000);
 }
 
 function countdown() {
-    timerEl.textContent="Time: " + timeLeft;
+    timerEl.textContent=timeLeft + " Seconds Remaining";
     if (timeLeft > 0) {
         timeLeft--
     } else {
