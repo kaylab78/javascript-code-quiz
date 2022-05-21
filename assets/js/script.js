@@ -2,43 +2,55 @@ var startEl = document.getElementById("startBtn");
 var timerEl = document.getElementById("timer");
 var mainEl = document.getElementById("main");
 var timeLeft = 75;
-var timeMessage = "You've run out of time. Try again!"
 var introText = document.getElementById("intro-text");
+var question = document.getElementById("question");
 
+var questionOne = document.createElement("h2");
+var questionOneText = document.createTextNode("Which is NOT a commonly used JavaScript data type?");
+
+questionOne.appendChild(questionOneText);
 
 // Click the start button. Timer starts. 
-function timer() {
-    timerEl.textContent=timeLeft + " Seconds Remaining";
-    setInterval(countdown, 1000);
-}
-
 function countdown() {
     timerEl.textContent=timeLeft + " Seconds Remaining";
     if (timeLeft > 0) {
         timeLeft--
     } else {
-        timerEl.textContent = timeMessage;
+        timerEl.textContent = "You've run out of time. Try again!";
     }
+}
+
+function timer() {
+    timerEl.textContent=timeLeft + " Seconds Remaining";
+    setInterval(countdown, 1000);
+    startQuiz();
+}
+
+// First question appears. (Event Listeners)
+function startQuiz() {
+    question.appendChild(questionOne);
 }
 
 startEl.addEventListener("click", timer);
 
-// First question appears. (Event Listeners)
+
+
+
 
 var quizQuestions = [
     {
-        id: 1,
-        question: "Question 1",
-        options: ["1", "2", "3"],
-        answer: 1
+        question: "Which is NOT a commonly used JavaScript data type?",
+        options: ["string", "boolean", "alert", "number"],
+        answer: "alert"
     },
     {
-        id: 1,
         question: "Question 2",
         options: ["1", "2", "3"],
-        answer: 2
+        answer: "2"
     }
 ];
+
+
 
 // Click one of the answer options. Another question appears. (Event Listeners)
 
