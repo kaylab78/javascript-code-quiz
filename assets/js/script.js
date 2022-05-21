@@ -4,11 +4,16 @@ var mainEl = document.getElementById("main");
 var timeLeft = 75;
 var introText = document.getElementById("intro-text");
 var question = document.getElementById("question");
+var option = document.getElementById("option");
 
+// Question 1
 var questionOne = document.createElement("h2");
-var questionOneText = document.createTextNode("Which is NOT a commonly used JavaScript data type?");
 
-questionOne.appendChild(questionOneText);
+var answerArea = document.createElement("ul");
+var li1 = document.createElement("li");
+var li2 = document.createElement("li");
+var li3 = document.createElement("li");
+var li4 = document.createElement("li");
 
 // Click the start button. Timer starts. 
 function countdown() {
@@ -28,7 +33,25 @@ function timer() {
 
 // First question appears. (Event Listeners)
 function startQuiz() {
+    introText.setAttribute("style", "display:none");
+    startEl.setAttribute("style", "display: none");
+
+    questionOne.textContent = "Which is NOT a commonly used JavaScript data type?";
     question.appendChild(questionOne);
+
+    option.appendChild(answerArea);
+
+    li1.textContent = "String";
+    answerArea.appendChild(li1);
+
+    li2.textContent = "Boolean"
+    answerArea.appendChild(li2);
+
+    li3.textContent = "Alert"
+    answerArea.appendChild(li3);
+
+    li4.textContent = "Number"
+    answerArea.appendChild(li4);
 }
 
 startEl.addEventListener("click", timer);
@@ -37,18 +60,18 @@ startEl.addEventListener("click", timer);
 
 
 
-var quizQuestions = [
-    {
-        question: "Which is NOT a commonly used JavaScript data type?",
-        options: ["string", "boolean", "alert", "number"],
-        answer: "alert"
-    },
-    {
-        question: "Question 2",
-        options: ["1", "2", "3"],
-        answer: "2"
-    }
-];
+// var quizQuestions = [
+//     {
+//         question: "Which is NOT a commonly used JavaScript data type?",
+//         options: ["string", "boolean", "alert", "number"],
+//         answer: "alert"
+//     },
+//     {
+//         question: "Question 2",
+//         options: ["1", "2", "3"],
+//         answer: "2"
+//     }
+// ];
 
 
 
