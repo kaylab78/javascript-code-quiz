@@ -1,10 +1,12 @@
 var startEl = document.getElementById("startBtn");
 var timerEl = document.getElementById("timer");
 var mainEl = document.getElementById("main");
-var timeLeft = 75;
+var timeLeft = 40;
 var introText = document.getElementById("intro-text");
 var questionEl = document.getElementById("question");
 var optionEl = document.getElementById("option");
+var scoreText = document.getElementById("score-text");
+var enterInitials = document.getElementById("enter-initials");
 
 // Question and answer option elements
 var questionH2 = document.createElement("h2");
@@ -127,6 +129,8 @@ function scoreDisplay() {
     questionH2.textContent = "All done!";
     questionEl.appendChild(questionH2);
     answerUl.setAttribute("style", "display:none");
+    scoreText.textContent = "Your final score is " + timeLeft + ".";
+    enterInitials.textContent = "Enter initials to log your score: ";
 }
 
 
