@@ -56,7 +56,7 @@ function firstQuestion() {
 }
 
 
-// when the user clicks an answer in firstQuestion, the next question appears.
+// When the user clicks an answer in firstQuestion, the second question appears.
 function secondQuestion() {
     questionH2.textContent = "The condition in an if/else statement is enclosed in which of the following?";
     questionEl.appendChild(questionH2);
@@ -78,7 +78,7 @@ function secondQuestion() {
     answerUl.addEventListener("click", thirdQuestion);
 }
 
-// when the user clicks an answer in secondQuestion, the next question appears.
+// When the user clicks an answer in secondQuestion, the third question appears.
 function thirdQuestion() {
     questionH2.textContent = "Which of the following can be stored in arrays in JavaScript?";
     questionEl.appendChild(questionH2);
@@ -100,7 +100,7 @@ function thirdQuestion() {
     answerUl.addEventListener("click", fourthQuestion);
 }
 
-// when the user clicks an answer in thirdQuestion, the next question appears.
+// When the user clicks an answer in thirdQuestion, the last question appears.
 function fourthQuestion() {
     questionH2.textContent = "When being assigned to a variable, which of the following must string values be enclosed with?";
     questionEl.appendChild(questionH2);
@@ -118,6 +118,15 @@ function fourthQuestion() {
 
     li4.textContent = "Parentheses";
     answerUl.appendChild(li4);
+
+    answerUl.addEventListener("click", scoreDisplay);
+}
+
+// When the user clicks an answer in fourthQuestion, their score displays on the screen and are able to enter their initials in order to log it to the High Scores page.
+function scoreDisplay() {
+    questionH2.textContent = "All done!";
+    questionEl.appendChild(questionH2);
+    answerUl.setAttribute("style", "display:none");
 }
 
 
