@@ -3,17 +3,17 @@
 ## Description
 This is a brief quiz designed to test the knowledge of the user about JavaScript.
 
-This project is not complete. Even after going to office hours, meeting with a tutor, and talking to her outside of our one hour session, I didn't have time to complete it to my satisfaction and stay on track within the course. I decided to submit what I have.
+This project is not complete. Even after going to office hours, meeting with a tutor, and talking to her outside of our one hour session, I didn't have time to complete it to my satisfaction *and* stay on track within the course. I decided to submit what I have.
 
 I was very excited and still am pleased that I was able to get the questions to appear on the page after a mouse click. My boot camp tutor Meg Meyers helped me with making sure that the computer could tell which answer was correct or incorrect. That's about where the functionality of this quiz ends.
 
 There is a glitch in the second question. An "incorrect" alert appears every time the user clicks an answer regardless of if it's correct or not. But then, a second alert appears saying if the answer they picked is correct or not.
 
-There are several pieces still missing from this quiz. One example is the input box for the initials isn't connected to the High Scores page. I didn't get to coding that at all.
+There are several pieces still missing from this quiz. One example is the input box for the initials isn't connected to the High Scores page. I didn't get to coding that at all. The high scores page is completely empty.
 
 The code that I wrote for this project is very repetitive. (That's why it's only two questions long.) My tutor reminded me about the DRY method, and we talked about using an array. I started to code an array to use, but I couldn't figure out how to get the items from the array to print to the screen. 
 
-In the future, if I'm going to use this project in a portfolio, I need to clean up the code and use an array to cycle through the questions/answer options on the screen. 
+In the future, if I'm going to use this project in a portfolio, I need to clean up the code and use an array to cycle through the question/answer options on the screen. 
 
 ## Installation
 In order to access this repository, the user needs to clone it from GitHub using the command git clone git@github.com:kaylab78/javascript-code-quiz.git in their command line interface.
@@ -28,7 +28,7 @@ When the user clicks on an incorrect answer, their score is deducted by 10 and t
 When the user clicks on a correct answer, an alert appears on the page saying, "Correct!" No time is deducted.
 ![The screenshot shows a quiz question with three options in blue and one option in green below it. There is a dialogue box in the window that says, "Correct!" The time remaining shows in the upper right corner.](assets/images/screenshot2-5.png)
 
-The second question of the quiz has an incorrectly functionality that will need to be corrected in the future. When the user clicks on one of the choices, they receive two alerts. The user expects the second question to act like the first question.
+The second question of the quiz has an incorrect functionality that will need to be corrected in the future. When the user clicks on one of the choices, they receive two alerts. The user expects the second question to act like the first question.
 
 After the last question of the quiz or when the timer runs to 0, the user is taken to a final screen. Their score is displayed, and they have a text box where they can enter their initials to log their score. There is a button that would be used to submit their initials and score to be logged onto the high score page. This button is not currently working. The high score page can be viewed via the link in the top left corner. 
 ![The screenshot shows text that reads, "All done! Your final score is 0. Enter intiials to log your score.](assets/images/screenshot3.png)
