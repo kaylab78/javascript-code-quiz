@@ -1,11 +1,15 @@
 # JavaScript Code Quiz
 
 ## Description
+This is a brief quiz designed to test the knowledge of the user about JavaScript.
+
+This project is not complete. Even after going to office hours and meeting with a tutor, I didn't have time to complete it to my satisfaction and stay on track within the course.
 
 ## Installation
 In order to access this repository, the user needs to clone it from GitHub using the command git clone git@github.com:kaylab78/javascript-code-quiz.git in their command line interface.
 
 ## Usage
+As it is, when the user clicks on the "Start Quiz" button, the first question appears. 
 
 ## Credits
 The wording for the license on this project is from the MIT License outlined [here](https://choosealicense.com/licenses/mit/).
