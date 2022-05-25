@@ -10,6 +10,7 @@ var enterInitials = document.getElementById("initials");
 var setInterval;
 var feedback = document.getElementById("feedback");
 var initialsInput = document.getElementById("initialsInput");
+var submitEl = document.getElementById("submitInitials");
 
 // Question and answer option elements
 var questionH2 = document.createElement("h2");
@@ -200,11 +201,23 @@ function scoreDisplay() {
     questionEl.appendChild(questionH2);
     answerUl.setAttribute("style", "display:none");
     scoreText.textContent = "Your final score is " + timeLeft + ".";
-    enterInitials.textContent = "Enter initials to log your score: ";
-    initialsInput.innerHTML = "<label for='initials'></label><input type='text' name='initials' id='initialsInput'/><button class='btn'>Submit</button>"
+    enterInitials.textContent = "Enter your initials to log your score.";
+    initialsInput.innerHTML = "<label for='initials'></label><input type='text' name='initials' id='initialsInput'/><button id='submitInitials' class='btn'>Submit</button>"
 }
 
+submitEl.addEventListener("click", function(event) {
+    event.preventDefault();
+
+    var highScore = {
+        score: timeLeft,
+        initials: initialsInput.value() 
+    };
+
+    localStorage.setItem("highScore", JSON.stringify(highScore));
+}) 
+
 function saveScore() {
+
     // text box, choose value,
     // get (to see what's in localStorage), make new object and add to it, push to local storage
 }
