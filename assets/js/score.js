@@ -5,6 +5,10 @@
 var scoreListEl = document.getElementById("scoreList");
 var clearEl = document.getElementById("clear");
 
+function printScores ();
+
+function sortScores();
+
 function clearScores() {
     clearEl.addEventListener("click", function(){
         localStorage.removeItem();
