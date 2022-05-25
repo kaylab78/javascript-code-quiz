@@ -202,7 +202,7 @@ function scoreDisplay() {
     answerUl.setAttribute("style", "display:none");
     scoreText.textContent = "Your final score is " + timeLeft + ".";
     enterInitials.textContent = "Enter your initials to log your score.";
-    initialsInput.innerHTML = "<label for='initials'></label><input type='text' name='initials' id='initialsInput'/><button id='submitInitials' class='btn'>Submit</button>"
+    initialsInput.innerHTML = "<label for='initials'></label><input type='text' name='initials' id='initialsInput'/><button id='submitInitials' class='btn'><a href='./highscores.html'>Submit</a></button>"
     saveScore();
 }
 
