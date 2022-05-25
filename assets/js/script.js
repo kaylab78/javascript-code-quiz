@@ -86,7 +86,7 @@ function firstQuestion() {
     });
     answerUl.appendChild(li2);
 
-    li3.textContent = "Alert"
+    li3.textContent = "Alert";
     li3.addEventListener("click", function(){
         if ("Alert" !== answer){
             timeLeft -= 10;           
@@ -124,11 +124,11 @@ function secondQuestion() {
     questionH2.textContent = "The condition in an if/else statement is enclosed in which of the following?";
     questionEl.appendChild(questionH2);
 
-    optionEl.appendChild(answerUl);
-
     // Correct answer
     var answer = "Curly Brackets";
 
+    optionEl.appendChild(answerUl);
+    
     li1.textContent = "Quotation Marks";
     li1.addEventListener("click", function(){
         if ("Quotation Marks" !== answer){

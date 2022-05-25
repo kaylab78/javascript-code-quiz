@@ -9,11 +9,13 @@ I was very excited and still am pleased that I was able to get the questions to 
 
 There is a glitch in the second question. An "incorrect" alert appears every time the user clicks an answer regardless of if it's correct or not. But then, a second alert appears saying if the answer they picked is correct or not.
 
-There are several pieces still missing from this quiz. One example is the input box for the initials isn't connected to the High Scores page. I didn't get to coding that at all. The high scores page is completely empty.
+There are several pieces still missing from this quiz. One example is that the input box for initials isn't saving to localStorage, and therefore, the High Scores page isn't pulling in any information. 
 
 The code that I wrote for this project is very repetitive. (That's why it's only two questions long.) My tutor reminded me about the DRY method, and we talked about using an array. I started to code an array to use, but I couldn't figure out how to get the items from the array to print to the screen. 
 
 In the future, if I'm going to use this project in a portfolio, I need to clean up the code and use an array to cycle through the question/answer options on the screen. 
+
+Plus, I need to get the score and initials to save to localStorage and then print on the High Scores page.
 
 ## Installation
 In order to access this repository, the user needs to clone it from GitHub using the command git clone git@github.com:kaylab78/javascript-code-quiz.git in their command line interface.
