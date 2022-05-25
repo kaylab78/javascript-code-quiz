@@ -216,7 +216,5 @@ function saveScore() {
         };
     
         localStorage.setItem("highScore", JSON.stringify(highScore));
-    }) 
-    // text box, choose value,
-    // get (to see what's in localStorage), make new object and add to it, push to local storage
-}
+    });
+};

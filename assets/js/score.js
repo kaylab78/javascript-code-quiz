@@ -5,7 +5,10 @@
 var scoreListEl = document.getElementById("scoreList");
 var clearEl = document.getElementById("clear");
 
-function printScores ();
+function printScores () {
+    var data = JSON.parse(localStorage.getItem("highScore"));
+    scoreListEl.textContent = data;
+};
 
 function sortScores();
 
