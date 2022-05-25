@@ -89,3 +89,8 @@ a {
     margin: 5px;
     width: 170px;
 }
+
+#initialsInput {
+    height: 25px;
+    line-height: 16px;
+}
